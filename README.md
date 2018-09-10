@@ -17,3 +17,6 @@ Don't resolve a scoped service from a singleton. It may cause the service have i
 - Design Services to use dependency injection to obtain their dependencies.
 - Avoid stateful, static method calls
 
+## Middleware
+
+The delegate can decide that not pass request to the next delegate that it's **short-circuiting** the request pipeline.
